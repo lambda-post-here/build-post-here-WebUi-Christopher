@@ -18,7 +18,7 @@
       margin: 0;
 
       @media @phone {
-        width: 460px;
+        width: calc(100vw -2em);
         box-sizing: border-box;
         margin: 0;
         
@@ -60,6 +60,10 @@
         padding-bottom: 10px;
         font-weight: bold;
       }
+      @media @phone {
+        width: calc(100vw -2em);
+        
+      }
     }
     @media @phone {
       max-width: 400px;
@@ -70,5 +74,13 @@
   {
     text-align: center;
   }
-  
+
+  .box-description{
+    width: 100%;
+    font-size: 15px;
+    @media @phone {
+      font-size: 10px;
+      
+    }
+  }
   

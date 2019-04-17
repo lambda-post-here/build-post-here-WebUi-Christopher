@@ -82,7 +82,7 @@
 .tabs .tabs-item img {
   padding: 0px;
   margin: 0px;
-  width: 45%;
+  max-width: 300px;
 }
 .tabs .tabs-item-selected {
   display: block;
@@ -225,7 +225,7 @@
 .header .nav a {
   margin-left: 60px;
   font-size: 20px;
-  color: gray;
+  color: #567eeb;
   text-decoration: none;
 }
 .header nav a:hover {
@@ -241,7 +241,7 @@
   margin: 15px;
 }
 .top-content1 {
-  border-bottom: 1px dashed black;
+  border-bottom: 1px dashed #567eeb;
   padding-bottom: 40px;
   margin: 20px 20px 20px 0;
 }
@@ -262,7 +262,7 @@
 }
 .mid-content .inside {
   padding: 20px;
-  border-bottom: 1px dashed black;
+  border-bottom: 1px dashed #567eeb;
   width: 420px;
   margin: 20px 0;
 }

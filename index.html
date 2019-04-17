@@ -9,27 +9,30 @@
 		<script defer="defer" src="./components/Dropdown/Dropdown.js"></script>
 		<script defer="defer" src="./Tabs/Tabs.js"></script>
 		<script defer="defer" src="./carousel/carousel.js"></script>
+		<script defer="defer" src="./button/button.js"></script>
 		
 		<div class="header-container">
 			<div class="dropdown">
 				<div class="dropdown-button">Options</div>
 				<div class="dropdown-content dropdown-hidden">
-					<a class="dropdown-link" href="#" target="_blank">About</a>
+					<a class="dropdown-link" href="./about/about.html" target="_blank">About</a>
 					<a class="dropdown-link" href="#" target="_blank">Pricing</a>
-					<a class="dropdown-link" href="https://wizardly-montalcini-4be52f.netlify.com/login" target="_blank">Login</a>
 				</div>
 			</div>
 			<img src="./images/reddit.png" class="header" />
+			<div class="button">
+				<div class="login-button" onclick="visitPage();">Login</div>
+			</div>
 		</div>
 
 		<div class="section">
 			<div class="box">
 				<div class="box-title">How it works</div>
-				<div class="box-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce risus nibh, gravida nec felis quis, facilisis facilisis lectus. Nulla ac orci pretium, condimentum orci quis, accumsan nisi. Aliquam erat volutpat. Curabitur cursus mattis libero, at viverra risus hendrerit quis. Fusce imperdiet tristique tortor non tincidunt. Mauris accumsan urna nec augue feugiat porta. Proin vitae magna in ex malesuada laoreet eget a nulla. Aliquam tristique et elit at consequat. In hac habitasse platea dictumst.</div>
+				<div class="box-description">This application works by reading the title of your post as well as the post itself and scans various subreddits to find the best ones for your post. Once it find the post it will direct you to that subreddit and give you the option of posting there or not</div>
 			</div>
 			<div class="box">
 				<div class="box-title">Who this benefits</div>
-				<div class="box-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce risus nibh, gravida nec felis quis, facilisis facilisis lectus. Nulla ac orci pretium, condimentum orci quis, accumsan nisi. Aliquam erat volutpat. Curabitur cursus mattis libero, at viverra risus hendrerit quis. Fusce imperdiet tristique tortor non tincidunt. Mauris accumsan urna nec augue feugiat porta. Proin vitae magna in ex malesuada laoreet eget a nulla. Aliquam tristique et elit at consequat. In hac habitasse platea dictumst.</div>
+				<div class="box-description">This benefits people who are experienced in reddit as well as new people. This will save you a lot of time overall</div>
 			</div>
 		</div>
 		<div class="slideshow-container">
@@ -68,42 +71,37 @@
 		<div class="section">
 				<div class="tabs">
 					<div class="tabs-links">
-						<div class="tabs-link tabs-link-selected" data-tab="1">Tab 1</div>
-						<div class="tabs-link" data-tab="2">Tab 2</div>
-						<div class="tabs-link" data-tab="3">Tab 3</div>
-						<div class="tabs-link" data-tab="4">Tab 4</div>
+						<div class="tabs-link tabs-link-selected" data-tab="1">Step 1</div>
+						<div class="tabs-link" data-tab="2">Step 2</div>
+						<div class="tabs-link" data-tab="3">Step 3</div>
+						<div class="tabs-link" data-tab="4">Step 4</div>
 					</div>
 					<div class="tabs-items">
 						<div class="tabs-item tabs-item-selected" data-tab="1">
-							<div class="tabs-item-title">Quote 1</div>
+							<div class="tabs-item-title">Login</div>
 							<div class="tabs-item-description">
-								Don’t Panic.
+								<img src="./images/login.png">
 							</div>
 						</div>
 						<div class="tabs-item" data-tab="2">
-							<div class="tabs-item-title">Quote 2</div>
+							<div class="tabs-item-title">Wrtie your Post</div>
 							<div class="tabs-item-description">
-								Curiously enough, the only thing that went through the mind of the bowl of petunias as it fell was Oh no, not again. Many
-								people have speculated that if we knew exactly why the bowl of petunias had thought that we would know a lot more about the
-								nature of the Universe than we do now.
+								<strong>Title:</strong>Best Laptop for Lambda<br>
+								<strong>Description:</strong>Hello everyone I was wondering what the best laptop for lambda would be. My budget is $1000 thanks!
+
+								
 							</div>
 						</div>
 						<div class="tabs-item" data-tab="3">
-							<div class="tabs-item-title">Quote 3</div>
+							<div class="tabs-item-title">The App will then Give you Some Results</div>
 							<div class="tabs-item-description">
-								It is known that there are an infinite number of worlds, simply because there is an infinite amount of space for them to
-								be in. However, not every one of them is inhabited. Therefore, there must be a finite number of inhabited worlds. Any finite
-								number divided by infinity is as near to nothing as makes no odds, so the average population of all the planets in the Universe
-								can be said to be zero. From this it follows that the population of the whole Universe is also zero, and that any people
-								you may meet from time to time are merely the products of a deranged imagination.
+							<img src="./images/laptops.png">
 							</div>
 						</div>
 						<div class="tabs-item" data-tab="4">
-							<div class="tabs-item-title">Quote 4</div>
+							<div class="tabs-item-title">Choose What you Want</div>
 							<div class="tabs-item-description">
-								There is a theory which states that if ever anyone discovers exactly what the Universe is for and why it is here, it will
-								instantly disappear and be replaced by something even more bizarre and inexplicable. There is another theory which states
-								that this has already happened.
+								<img src="./images/choose.png">
 							</div>
 						</div>
 					</div>
@@ -111,7 +109,13 @@
 			</div>
 		</div>
 		<footer>
-			<p>Copyright Reddit Poster 2019</p>
-		  </footer>
+			<div class="nav-bottom">
+				<nav>
+					<a href="./about/about.html" target="_blank">About</a>
+					<a href="#" target="_blank">Pricing</a>
+					<a href="http://post-here.netlify.com/" target="_blank">Login</a>
+				</nav>
+			</div>
+				</footer>
 	</body>
 </html>

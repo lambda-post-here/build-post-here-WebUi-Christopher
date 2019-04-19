@@ -1,5 +1,5 @@
 .container {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
     @media @phone {
       box-sizing: border-box;
@@ -95,6 +95,13 @@
     background: white;
     border-radius: 5px;
     border: 1px solid black;
+}
+.mid-content .img
+{
+  max-width: 800px;
+  @media screen {
+    display: none;
+  }
 }
 
 .mid-content .inside button:hover {
